@@ -6,15 +6,18 @@
 <title>SOCEQUIP AFRIQUE — Société de Construction et d'Équipements</title>
 <meta name="description" content="SOCEQUIP AFRIQUE : électricité courant fort et faible, gros œuvre, plomberie, énergie solaire. Études, réalisations et fourniture d'équipements au Sénégal.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+<div class="crop tl"></div><div class="crop tr"></div><div class="crop bl"></div><div class="crop br"></div>
+
 <header>
   <nav>
-    <div class="logo">SOC<span>E</span>QUIP <span style="color:var(--paper); font-weight:600; font-size:0.9rem; letter-spacing:0.15em;">AFRIQUE</span></div>
+    <div class="logo"><span class="mark"></span>SOC<span class="e">E</span>QUIP <span style="color:var(--paper); font-weight:500; font-size:0.82rem; letter-spacing:0.15em;">AFRIQUE</span></div>
     <div class="navlinks">
+      <a href="#direction">Direction</a>
       <a href="#missions">Missions</a>
       <a href="#vision">Vision</a>
       <a href="#realisations">Réalisations</a>
@@ -26,25 +29,143 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
-  <div id="mnav" style="display:none; flex-direction:column; padding:0 32px 20px; gap:14px; background:var(--graphite);">
+  <div id="mnav" style="display:none; flex-direction:column; padding:0 32px 20px; gap:14px; background:var(--blueprint);">
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-grid"></div>
   <div class="wrap hero-inner">
     <span class="eyebrow">Dakar · Sénégal · RC DKR-2022-B-42216</span>
-    <h1>L'énergie et le bâti,<br><em>bien conçus.</em></h1>
+    <h1>Du schéma unifilaire<br>au <em>bâtiment livré.</em></h1>
     <p class="hero-sub">SOCEQUIP AFRIQUE conçoit et réalise des projets d'électricité, de gros œuvre et d'énergie solaire — des réseaux moyenne tension aux immeubles clé en main, pour des clients institutionnels et privés à travers le Sénégal.</p>
     <div class="cta-row">
       <a href="#realisations" class="btn btn-primary">Voir nos réalisations</a>
       <a href="#contact" class="btn btn-outline">Nous contacter</a>
     </div>
+
+    <div class="schema-wrap reveal">
+      <span class="sheet-no">SCHÉMA UNIFILAIRE — RÉF. MT/BT-01</span>
+      <svg class="schema-svg" id="heroSchema" viewBox="0 0 920 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma unifilaire : poste source, ligne MT, poste de transformation H61, réseau BT, bâtiment alimenté, avec apport solaire">
+        <path class="ln" d="M60,90 H210" />
+        <path class="ln" d="M270,90 H420" />
+        <path class="ln" d="M480,90 H700" />
+        <path class="ln" d="M760,90 H860" />
+        <path class="ln2" d="M540,90 V52 M540,52 L560,30 M540,52 L520,30" />
+
+        <circle class="node active" cx="40" cy="90" r="20"/>
+        <text x="40" y="94" text-anchor="middle">MT</text>
+        <text class="lbl" x="40" y="126" text-anchor="middle">POSTE SOURCE</text>
+        <text x="140" y="80" text-anchor="middle">30 kV · 2 211 ml</text>
+
+        <rect class="node" x="230" y="70" width="40" height="40" />
+        <text x="250" y="94" text-anchor="middle">H61</text>
+        <text class="lbl" x="250" y="126" text-anchor="middle">POSTE H61</text>
+        <text x="350" y="80" text-anchor="middle">50 kVA</text>
+
+        <circle class="node" cx="450" cy="90" r="16"/>
+        <text x="450" y="94" text-anchor="middle" style="font-size:8px">BT</text>
+        <text class="lbl" x="450" y="122" text-anchor="middle">DÉPART BT</text>
+        <text x="590" y="80" text-anchor="middle">Réseau BT · 1 578 ml</text>
+
+        <circle class="ln2" cx="540" cy="26" r="8" fill="none" style="stroke:var(--safety-amber)"/>
+        <text style="fill:var(--safety-amber); font-size:9px" x="540" y="14" text-anchor="middle">PV</text>
+
+        <path class="node" d="M700,110 L730,70 L790,70 L790,110 Z" />
+        <text x="745" y="98" text-anchor="middle" style="font-size:8px">BÂT.</text>
+        <text class="lbl" x="745" y="126" text-anchor="middle">CLIENT ALIMENTÉ</text>
+
+        <circle class="node" cx="880" cy="90" r="6" style="stroke:var(--line-cyan)"/>
+      </svg>
+      <div class="schema-hint">◂ Faites glisser pour voir le schéma complet ▸</div>
+    </div>
+
     <div class="hero-stats reveal" id="heroStats">
-      <div><div class="stat-num" data-count="8421">0</div><div class="stat-label">Mètres de réseau MT/BT — NDIASSANE SALOUM</div></div>
-      <div><div class="stat-num" data-count="27"><span>+</span></div><div class="stat-label">Sites solaires sécurisés, 14 régions</div></div>
-      <div><div class="stat-num" data-count="56"><span>+</span></div><div class="stat-label">Villages électrifiés en solaire (ASER)</div></div>
-      <div><div class="stat-num" data-count="450"><span>+</span></div><div class="stat-label">Systèmes solaires — îles de Casamance</div></div>
+      <div class="cote-item"><div class="stat-num" data-count="8421">0</div><div class="stat-label">Mètres de réseau MT/BT — Ndiassane Saloum</div></div>
+      <div class="cote-item"><div class="stat-num" data-count="27"><span>+</span></div><div class="stat-label">Sites solaires sécurisés, 14 régions</div></div>
+      <div class="cote-item"><div class="stat-num" data-count="56"><span>+</span></div><div class="stat-label">Villages électrifiés en solaire (ASER)</div></div>
+      <div class="cote-item"><div class="stat-num" data-count="450"><span>+</span></div><div class="stat-label">Systèmes solaires — îles de Casamance</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="power-line"></div>
+
+<section id="direction">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="tag">Feuille 01 — Direction</span>
+        <h2>Une entreprise familiale, deux générations</h2>
+      </div>
+      <p>Une direction technique éprouvée, relayée par une nouvelle génération formée à l'architecture et à la conduite de projets.</p>
+    </div>
+
+    <div class="leader-grid reveal">
+      <div class="leader-card">
+        <span class="sheet-no">RESP. 01</span>
+        <div class="leader-head">
+          <span class="avatar">ON</span>
+          <div>
+            <h3>Oumar Niang</h3>
+            <div class="role">Directeur Général &amp; Propriétaire — Socequip Afrique</div>
+          </div>
+        </div>
+        <p>Acteur majeur du BTP et de l'immobilier au Sénégal, il est directeur et propriétaire de Socequip Afrique. Il a réalisé de nombreux immeubles à travers le pays et collabore aujourd'hui avec plusieurs grandes sociétés du secteur immobilier.</p>
+        <p>Son expertise technique et son réseau font de Socequip Afrique une référence en matière de construction et de fiabilité.</p>
+      </div>
+
+      <div class="leader-card">
+        <span class="sheet-no">RESP. 02</span>
+        <div class="leader-head">
+          <span class="avatar">NS</span>
+          <div>
+            <h3>Ndèye Sassoum Niang</h3>
+            <div class="role">Architecte, cabinet BAD · Assistante générale — Socequip Afrique · PDG, Mansatou Immobilier</div>
+          </div>
+        </div>
+        <p>Elle accompagne aujourd'hui le développement du groupe, à la croisée du terrain et de la conception. À la tête de Mansatou Immobilier — société immobilière fondée avec sa sœur Manitou Niang — elle porte une vision moderne et dynamique.</p>
+        <p>Cette double casquette donne au groupe une double compétence : la rigueur du chantier et le regard de l'architecte.</p>
+      </div>
+    </div>
+
+    <div class="org-diagram reveal">
+      <span class="sheet-no">ORGANIGRAMME — RÉF. DIR-01</span>
+      <svg class="schema-svg in" viewBox="0 0 980 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Organigramme : Oumar Niang, Directeur Général de Socequip Afrique, appuyé par Ndèye Sassoum Niang, assistante générale et architecte, à la tête de Mansatou Immobilier, société co-fondée avec Manitou Niang">
+        <path class="ln" style="stroke-dashoffset:0;" d="M170,65 H358" />
+        <path class="ln" style="stroke-dashoffset:0;" d="M420,65 H602" />
+        <path class="ln2" style="stroke-dashoffset:0;" d="M660,65 H838" />
+
+        <circle class="node active" cx="150" cy="65" r="22"/>
+        <text x="150" y="69" text-anchor="middle">ON</text>
+        <text class="lbl" x="150" y="102" text-anchor="middle">OUMAR NIANG</text>
+        <text x="150" y="118" text-anchor="middle" style="font-size:8px">Directeur Général</text>
+
+        <rect class="node" x="378" y="45" width="42" height="42" />
+        <text x="399" y="69" text-anchor="middle">NS</text>
+        <text class="lbl" x="399" y="102" text-anchor="middle">NDÈYE SASSOUM</text>
+        <text x="399" y="118" text-anchor="middle" style="font-size:8px">Assistante générale</text>
+
+        <circle class="node" cx="630" cy="65" r="18" style="stroke:var(--safety-amber)"/>
+        <text x="630" y="69" text-anchor="middle" style="font-size:8px">CB</text>
+        <text class="lbl" x="630" y="98" text-anchor="middle" style="fill:var(--safety-amber)">CABINET BAD</text>
+        <text x="630" y="112" text-anchor="middle" style="font-size:8px">Architecte</text>
+
+        <path class="node" d="M838,90 L860,50 L920,50 L920,90 Z" style="stroke:var(--line-cyan)"/>
+        <text x="879" y="80" text-anchor="middle" style="font-size:8px">MI</text>
+        <text class="lbl" x="879" y="106" text-anchor="middle" style="fill:var(--line-cyan)">MANSATOU IMMOBILIER</text>
+        <text x="879" y="120" text-anchor="middle" style="font-size:8px">PDG · avec Manitou Niang</text>
+      </svg>
+    </div>
+
+    <div class="chain-strip reveal">
+      <span class="chain-lead">Socequip Afrique et Mansatou Immobilier interviennent sur toute la chaîne de valeur :</span>
+      <div class="chain-row">
+        <div class="chain-step"><span class="cnum">01</span> Construire</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-step"><span class="cnum">02</span> Vendre</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-step"><span class="cnum">03</span> Louer</div>
+      </div>
     </div>
   </div>
 </section>
@@ -55,7 +176,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="tag">Nos missions</span>
+        <span class="tag">Feuille 02 — Nos missions</span>
         <h2>Quatre lots, une même exigence technique</h2>
       </div>
       <p>Études et réalisations en bâtiments et travaux publics (BTP), avec une expertise reconnue dans les lots généraux.</p>
@@ -90,7 +211,7 @@
   <div class="wrap">
     <div class="vision-grid">
       <div class="reveal">
-        <span class="tag">Notre vision</span>
+        <span class="tag">Feuille 03 — Notre vision</span>
         <h2>Accès à l'énergie, engagement environnemental</h2>
         <p>Spécialisée dans la conception et la mise en œuvre d'installations, SOCEQUIP AFRIQUE analyse les solutions d'approvisionnement en énergie électrique et planifie les ouvrages d'électrification : équipements photovoltaïques, groupes électrogènes, aérogénérateurs, réseaux électriques, adduction d'eau, plomberie.</p>
         <p>En s'appuyant sur les nouvelles technologies, l'entreprise déploie les moyens nécessaires pour offrir à ses clients des services de qualité, au sein d'un réseau de partenaires techniques et financiers européens, africains et asiatiques.</p>
@@ -117,7 +238,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="tag">Chiffres clés</span>
+        <span class="tag">Feuille 04 — Chiffres clés</span>
         <h2>Quelques repères depuis notre création</h2>
       </div>
       <p>Une sélection de réalisations en réseaux électriques, énergie solaire et bâtiment.</p>
@@ -157,7 +278,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="tag">Nos réalisations par domaine</span>
+        <span class="tag">Feuille 05 — Réalisations par domaine</span>
         <h2>Un historique de projets, secteur par secteur</h2>
       </div>
       <p>Sélectionnez un domaine pour voir les projets réalisés.</p>
@@ -265,7 +386,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="tag">Projets en cours</span>
+        <span class="tag">Feuille 06 — Projets en cours</span>
         <h2>Chantiers actuellement en réalisation</h2>
       </div>
     </div>
@@ -298,7 +419,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="tag">Nos collaborations</span>
+        <span class="tag">Feuille 07 — Nos collaborations</span>
         <h2>Un réseau de partenaires pour des projets fiables</h2>
       </div>
       <p>Nous développons des collaborations avec différents acteurs pour mettre en œuvre des projets fiables, performants et durables.</p>
@@ -321,7 +442,7 @@
   <div class="wrap">
     <div class="contact-grid">
       <div class="reveal">
-        <span class="tag">Contact</span>
+        <span class="tag">Feuille 08 — Contact</span>
         <h2>Parlons de votre projet</h2>
         <p>Solutions fiables, durables et adaptées à vos besoins — de l'étude de faisabilité à la mise en service, dans le respect des normes, des délais et des engagements pris.</p>
         <a href="mailto:contact@socequipafrique.com" class="btn btn-primary">contact@socequipafrique.com</a>
@@ -347,12 +468,15 @@
         </div>
       </div>
     </div>
-    <div class="power-line" style="margin-bottom:26px;"></div>
-    <div class="foot-bottom">
-      <span>© 2026 SOCEQUIP AFRIQUE — Tous droits réservés</span>
-      <span>RC : DKR-2022-B-42216 · NINEA : 009908619</span>
-    </div>
   </div>
+  <div class="title-block">
+    <div class="tb-cell"><div class="tb-label">Dossier</div><div class="tb-val">Présentation SOCEQUIP AFRIQUE</div></div>
+    <div class="tb-cell"><div class="tb-label">RC</div><div class="tb-val">DKR-2022-B-42216</div></div>
+    <div class="tb-cell"><div class="tb-label">NINEA</div><div class="tb-val">009908619</div></div>
+    <div class="tb-cell"><div class="tb-label">Adresse</div><div class="tb-val">Ouest Foire Lot 32, VDN, Dakar</div></div>
+    <div class="tb-cell"><div class="tb-label">Révision</div><div class="tb-val">2026</div></div>
+  </div>
+  <div class="foot-bottom">© 2026 SOCEQUIP AFRIQUE — Tous droits réservés</div>
 </footer>
 
 <script src="js/main.js"></script>

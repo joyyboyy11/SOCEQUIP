@@ -7,6 +7,20 @@
   }, {threshold:0.15});
   revealEls.forEach(el=>io.observe(el));
 
+  // Dessin du schéma unifilaire (élément signature du hero)
+  const schema = document.getElementById('heroSchema');
+  if(schema){
+    const schemaIO = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          requestAnimationFrame(()=>schema.classList.add('in'));
+          schemaIO.unobserve(e.target);
+        }
+      });
+    }, {threshold:0.3});
+    schemaIO.observe(schema);
+  }
+
   // Tabs
   document.querySelectorAll('.tab-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
@@ -42,8 +56,8 @@
 
   // Mobile nav
   const mnav = document.getElementById('mnav');
-  mnav.innerHTML = ['Missions','Vision','Réalisations','En cours','Partenaires','Contact']
-    .map((t,i)=>`<a href="#${['missions','vision','realisations','encours','partenaires','contact'][i]}" style="padding:10px 0; border-bottom:1px solid var(--line); font-size:0.9rem; text-transform:uppercase; letter-spacing:0.05em;">${t}</a>`)
+  mnav.innerHTML = ['Direction','Missions','Vision','Réalisations','En cours','Partenaires','Contact']
+    .map((t,i)=>`<a href="#${['direction','missions','vision','realisations','encours','partenaires','contact'][i]}" style="padding:10px 0; border-bottom:1px solid var(--line-soft); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; font-family:'IBM Plex Sans Condensed';">${t}</a>`)
     .join('');
   mnav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>mnav.style.display='none'));
   document.querySelector('.burger').addEventListener('click', ()=>{
