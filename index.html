@@ -4,21 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOCEQUIP AFRIQUE — Société de Construction et d'Équipements</title>
+<meta name="description" content="SOCEQUIP AFRIQUE — société de construction et d'équipements basée à Dakar. Courant fort, courant faible, gros œuvre, plomberie et énergie solaire, de l'étude au chantier livré.">
+<meta name="theme-color" content="#14181c">
+<meta property="og:title" content="SOCEQUIP AFRIQUE — Construire et électrifier l'Afrique">
+<meta property="og:description" content="Études, réalisations et fourniture d'équipements en bâtiment et travaux publics — électricité, solaire, gros œuvre, plomberie. Dakar, Sénégal.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%2314181c'/%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6l1-8Z' fill='none' stroke='%23da1e28' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Aller au contenu</a>
 
-<header>
+<header id="siteHeader">
   <div class="wrap nav">
     <div class="brand">
       <span class="mark">SOC<span style="color:var(--white)">E</span>QUIP</span>
       <span>AFRIQUE</span>
       <small>&nbsp;BTP · ÉNERGIE · SOLAIRE</small>
     </div>
-    <nav class="links">
+    <nav class="links" id="navLinks">
       <a href="#direction">Direction</a>
       <a href="#missions">Missions</a>
       <a href="#vision">Vision</a>
@@ -26,24 +33,56 @@
       <a href="#realisations">Réalisations</a>
       <a href="#collaborations">Partenaires</a>
     </nav>
-    <a class="nav-cta" href="#contact">Nous contacter</a>
+    <div class="nav-right">
+      <a class="nav-cta" href="#contact">Nous contacter</a>
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#direction">Direction</a>
+    <a href="#missions">Missions</a>
+    <a href="#vision">Vision</a>
+    <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#collaborations">Partenaires</a>
+    <a href="#contact" class="mobile-cta">Nous contacter</a>
+  </nav>
 </header>
+
+<main id="main">
 
 <section class="hero">
   <div class="wrap hero-inner">
-    <div>
+    <div class="hero-copy">
       <div class="eyebrow on-dark">RC : DKR-2022-B-42216 — DAKAR, SÉNÉGAL</div>
       <h1>CONSTRUIRE<br>ET ÉLECTRIFIER<br>L'AFRIQUE<span class="accent">.</span></h1>
       <p class="hero-sub">SO / CIÉTÉ DE CONSTRUCTION ET D'ÉQUIPEMENTS — ÉTUDES, RÉALISATIONS ET FOURNITURE D'ÉQUIPEMENTS EN BÂTIMENTS ET TRAVAUX PUBLICS.</p>
     </div>
-    <div>
+    <div class="hero-side">
       <p class="hero-lede">Courant fort, courant faible, gros œuvre, plomberie et énergie solaire : un seul interlocuteur, du bureau d'études au chantier livré.</p>
       <div class="hero-cta-row">
         <a href="#realisations" class="btn btn-primary">Voir nos réalisations</a>
         <a href="#contact" class="btn btn-ghost">Demander un devis</a>
       </div>
     </div>
+    <svg class="hero-blueprint" id="heroBlueprint" viewBox="0 0 520 460" fill="none" aria-hidden="true">
+      <g class="bp-dim" stroke="#4c8fd1" stroke-width="1" stroke-dasharray="4 4" opacity="0.5">
+        <line x1="40" y1="430" x2="480" y2="430"/>
+        <line x1="40" y1="420" x2="40" y2="440"/>
+        <line x1="480" y1="420" x2="480" y2="440"/>
+      </g>
+      <path class="bp-draw" d="M120 430V220l80-70 80 70v210" stroke="#8ca4b4" stroke-width="1.4"/>
+      <path class="bp-draw" d="M120 220h160M150 430V260h100v170" stroke="#8ca4b4" stroke-width="1.2"/>
+      <path class="bp-draw" d="M360 430V120M360 120l-14 22h28l-14-22Z" stroke="#f2b705" stroke-width="1.6" stroke-linejoin="round"/>
+      <path class="bp-draw" d="M360 150h60M420 150l-16 18M420 150l16 18M330 190h60M390 190l-16 18M390 190l16 18M340 250h50M390 250l-14 16M390 250l14 16" stroke="#f2b705" stroke-width="1.4" stroke-linecap="round"/>
+      <path class="bp-draw" d="M360 430V220" stroke="#da1e28" stroke-width="1.6"/>
+      <circle class="bp-draw" cx="360" cy="220" r="5" stroke="#da1e28" stroke-width="1.6"/>
+      <path class="bp-draw" d="M200 220V150h40v70" stroke="#8ca4b4" stroke-width="1.2"/>
+      <text x="130" y="450" class="bp-label">R+3 · BLOC A</text>
+      <text x="330" y="105" class="bp-label">PYLÔNE MT</text>
+    </svg>
   </div>
 
   <div class="ticker-band">
@@ -365,10 +404,16 @@
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap footer-inner">
-    <span class="mono">© <span id="year"></span> SOCEQUIP AFRIQUE — TOUS DROITS RÉSERVÉS</span>
-    <span class="mono">DAKAR · SÉNÉGAL</span>
+    <div class="footer-brand mono">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      SOCEQUIP AFRIQUE
+    </div>
+    <span class="mono">© <span id="year"></span> — TOUS DROITS RÉSERVÉS</span>
+    <a class="mono footer-top" href="#main">DAKAR · SÉNÉGAL ↑</a>
   </div>
 </footer>
 
