@@ -4,479 +4,372 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOCEQUIP AFRIQUE — Société de Construction et d'Équipements</title>
-<meta name="description" content="SOCEQUIP AFRIQUE : électricité courant fort et faible, gros œuvre, plomberie, énergie solaire. Études, réalisations et fourniture d'équipements au Sénégal.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="crop tl"></div><div class="crop tr"></div><div class="crop bl"></div><div class="crop br"></div>
-
 <header>
-  <nav>
-    <div class="logo"><span class="mark"></span>SOC<span class="e">E</span>QUIP <span style="color:var(--paper); font-weight:500; font-size:0.82rem; letter-spacing:0.15em;">AFRIQUE</span></div>
-    <div class="navlinks">
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="mark">SOC<span style="color:var(--white)">E</span>QUIP</span>
+      <span>AFRIQUE</span>
+      <small>&nbsp;BTP · ÉNERGIE · SOLAIRE</small>
+    </div>
+    <nav class="links">
       <a href="#direction">Direction</a>
       <a href="#missions">Missions</a>
       <a href="#vision">Vision</a>
+      <a href="#services">Services</a>
       <a href="#realisations">Réalisations</a>
-      <a href="#encours">En cours</a>
-      <a href="#partenaires">Partenaires</a>
-    </div>
-    <a class="navcall" href="tel:+221772504987">+221 77 250 49 87</a>
-    <button class="burger" aria-label="Menu" onclick="document.getElementById('mnav').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-  <div id="mnav" style="display:none; flex-direction:column; padding:0 32px 20px; gap:14px; background:var(--blueprint);">
+      <a href="#collaborations">Partenaires</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Nous contacter</a>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap hero-inner">
-    <span class="eyebrow">Dakar · Sénégal · RC DKR-2022-B-42216</span>
-    <h1>Du schéma unifilaire<br>au <em>bâtiment livré.</em></h1>
-    <p class="hero-sub">SOCEQUIP AFRIQUE conçoit et réalise des projets d'électricité, de gros œuvre et d'énergie solaire — des réseaux moyenne tension aux immeubles clé en main, pour des clients institutionnels et privés à travers le Sénégal.</p>
-    <div class="cta-row">
-      <a href="#realisations" class="btn btn-primary">Voir nos réalisations</a>
-      <a href="#contact" class="btn btn-outline">Nous contacter</a>
+    <div>
+      <div class="eyebrow on-dark">RC : DKR-2022-B-42216 — DAKAR, SÉNÉGAL</div>
+      <h1>CONSTRUIRE<br>ET ÉLECTRIFIER<br>L'AFRIQUE<span class="accent">.</span></h1>
+      <p class="hero-sub">SO / CIÉTÉ DE CONSTRUCTION ET D'ÉQUIPEMENTS — ÉTUDES, RÉALISATIONS ET FOURNITURE D'ÉQUIPEMENTS EN BÂTIMENTS ET TRAVAUX PUBLICS.</p>
     </div>
-
-    <div class="schema-wrap reveal">
-      <span class="sheet-no">SCHÉMA UNIFILAIRE — RÉF. MT/BT-01</span>
-      <svg class="schema-svg" id="heroSchema" viewBox="0 0 920 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma unifilaire : poste source, ligne MT, poste de transformation H61, réseau BT, bâtiment alimenté, avec apport solaire">
-        <path class="ln" d="M60,90 H210" />
-        <path class="ln" d="M270,90 H420" />
-        <path class="ln" d="M480,90 H700" />
-        <path class="ln" d="M760,90 H860" />
-        <path class="ln2" d="M540,90 V52 M540,52 L560,30 M540,52 L520,30" />
-
-        <circle class="node active" cx="40" cy="90" r="20"/>
-        <text x="40" y="94" text-anchor="middle">MT</text>
-        <text class="lbl" x="40" y="126" text-anchor="middle">POSTE SOURCE</text>
-        <text x="140" y="80" text-anchor="middle">30 kV · 2 211 ml</text>
-
-        <rect class="node" x="230" y="70" width="40" height="40" />
-        <text x="250" y="94" text-anchor="middle">H61</text>
-        <text class="lbl" x="250" y="126" text-anchor="middle">POSTE H61</text>
-        <text x="350" y="80" text-anchor="middle">50 kVA</text>
-
-        <circle class="node" cx="450" cy="90" r="16"/>
-        <text x="450" y="94" text-anchor="middle" style="font-size:8px">BT</text>
-        <text class="lbl" x="450" y="122" text-anchor="middle">DÉPART BT</text>
-        <text x="590" y="80" text-anchor="middle">Réseau BT · 1 578 ml</text>
-
-        <circle class="ln2" cx="540" cy="26" r="8" fill="none" style="stroke:var(--safety-amber)"/>
-        <text style="fill:var(--safety-amber); font-size:9px" x="540" y="14" text-anchor="middle">PV</text>
-
-        <path class="node" d="M700,110 L730,70 L790,70 L790,110 Z" />
-        <text x="745" y="98" text-anchor="middle" style="font-size:8px">BÂT.</text>
-        <text class="lbl" x="745" y="126" text-anchor="middle">CLIENT ALIMENTÉ</text>
-
-        <circle class="node" cx="880" cy="90" r="6" style="stroke:var(--line-cyan)"/>
-      </svg>
-      <div class="schema-hint">◂ Faites glisser pour voir le schéma complet ▸</div>
+    <div>
+      <p class="hero-lede">Courant fort, courant faible, gros œuvre, plomberie et énergie solaire : un seul interlocuteur, du bureau d'études au chantier livré.</p>
+      <div class="hero-cta-row">
+        <a href="#realisations" class="btn btn-primary">Voir nos réalisations</a>
+        <a href="#contact" class="btn btn-ghost">Demander un devis</a>
+      </div>
     </div>
+  </div>
 
-    <div class="hero-stats reveal" id="heroStats">
-      <div class="cote-item"><div class="stat-num" data-count="8421">0</div><div class="stat-label">Mètres de réseau MT/BT — Ndiassane Saloum</div></div>
-      <div class="cote-item"><div class="stat-num" data-count="27"><span>+</span></div><div class="stat-label">Sites solaires sécurisés, 14 régions</div></div>
-      <div class="cote-item"><div class="stat-num" data-count="56"><span>+</span></div><div class="stat-label">Villages électrifiés en solaire (ASER)</div></div>
-      <div class="cote-item"><div class="stat-num" data-count="450"><span>+</span></div><div class="stat-label">Systèmes solaires — îles de Casamance</div></div>
+  <div class="ticker-band">
+    <div class="ticker-track" id="ticker">
+      <!-- content injected twice via JS for seamless loop -->
     </div>
   </div>
 </section>
 
-<div class="power-line"></div>
-
-<section id="direction">
+<!-- ============ DIRECTION / GOUVERNANCE ============ -->
+<section class="section-dark" id="direction">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div>
-        <span class="tag">Feuille 01 — Direction</span>
-        <h2>Une entreprise familiale, deux générations</h2>
+        <div class="eyebrow on-dark">GOUVERNANCE</div>
+        <h2 style="color:var(--white)">Une direction,<br>un héritage.</h2>
       </div>
-      <p>Une direction technique éprouvée, relayée par une nouvelle génération formée à l'architecture et à la conduite de projets.</p>
+      <p>Socequip Afrique est portée par une direction expérimentée, et sa relève se construit déjà — entre chantier et immobilier.</p>
     </div>
 
-    <div class="leader-grid reveal">
-      <div class="leader-card">
-        <span class="sheet-no">RESP. 01</span>
-        <div class="leader-head">
-          <span class="avatar">ON</span>
-          <div>
-            <h3>Oumar Niang</h3>
-            <div class="role">Directeur Général &amp; Propriétaire — Socequip Afrique</div>
-          </div>
-        </div>
-        <p>Acteur majeur du BTP et de l'immobilier au Sénégal, il est directeur et propriétaire de Socequip Afrique. Il a réalisé de nombreux immeubles à travers le pays et collabore aujourd'hui avec plusieurs grandes sociétés du secteur immobilier.</p>
-        <p>Son expertise technique et son réseau font de Socequip Afrique une référence en matière de construction et de fiabilité.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-code">DIRECTION GÉNÉRALE</div>
+        <h3 class="team-name">Oumar Niang</h3>
+        <div class="team-role">Directeur Général &amp; Propriétaire — Socequip Afrique</div>
+        <p class="team-bio">Acteur majeur du BTP et de l'immobilier au Sénégal, il est directeur et propriétaire de Socequip Afrique. Il a réalisé de nombreux immeubles à travers le pays et collabore aujourd'hui avec plusieurs grandes sociétés du secteur immobilier. Son expertise technique et son réseau font de Socequip Afrique une référence en matière de construction et de fiabilité.</p>
       </div>
 
-      <div class="leader-card">
-        <span class="sheet-no">RESP. 02</span>
-        <div class="leader-head">
-          <span class="avatar">NS</span>
-          <div>
-            <h3>Ndèye Sassoum Niang</h3>
-            <div class="role">Architecte, cabinet BAD · Assistante générale — Socequip Afrique · PDG, Mansatou Immobilier</div>
-          </div>
-        </div>
-        <p>Elle accompagne aujourd'hui le développement du groupe, à la croisée du terrain et de la conception. À la tête de Mansatou Immobilier — société immobilière fondée avec sa sœur Manitou Niang — elle porte une vision moderne et dynamique.</p>
-        <p>Cette double casquette donne au groupe une double compétence : la rigueur du chantier et le regard de l'architecte.</p>
+      <div class="team-card">
+        <div class="team-code">RELÈVE &amp; DÉVELOPPEMENT</div>
+        <h3 class="team-name">Ndèye Sassoum Niang</h3>
+        <div class="team-role">PDG, Mansatou Immobilier — Architecte au cabinet BAD — Assistante générale, Socequip Afrique</div>
+        <p class="team-bio">La direction de l'entreprise repose aussi sur les mains de sa fille, Ndèye Sassoum Niang. À la tête de Mansatou Immobilier — une entreprise immobilière créée avec sa sœur Manitou Niang — elle porte une vision moderne et dynamique. Architecte au cabinet BAD et Assistante générale chez Socequip Afrique, elle accompagne le développement du groupe, qui bénéficie ainsi d'une double compétence : terrain et conception.</p>
       </div>
     </div>
 
-    <div class="org-diagram reveal">
-      <span class="sheet-no">ORGANIGRAMME — RÉF. DIR-01</span>
-      <svg class="schema-svg in" viewBox="0 0 980 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Organigramme : Oumar Niang, Directeur Général de Socequip Afrique, appuyé par Ndèye Sassoum Niang, assistante générale et architecte, à la tête de Mansatou Immobilier, société co-fondée avec Manitou Niang">
-        <path class="ln" style="stroke-dashoffset:0;" d="M170,65 H358" />
-        <path class="ln" style="stroke-dashoffset:0;" d="M420,65 H602" />
-        <path class="ln2" style="stroke-dashoffset:0;" d="M660,65 H838" />
-
-        <circle class="node active" cx="150" cy="65" r="22"/>
-        <text x="150" y="69" text-anchor="middle">ON</text>
-        <text class="lbl" x="150" y="102" text-anchor="middle">OUMAR NIANG</text>
-        <text x="150" y="118" text-anchor="middle" style="font-size:8px">Directeur Général</text>
-
-        <rect class="node" x="378" y="45" width="42" height="42" />
-        <text x="399" y="69" text-anchor="middle">NS</text>
-        <text class="lbl" x="399" y="102" text-anchor="middle">NDÈYE SASSOUM</text>
-        <text x="399" y="118" text-anchor="middle" style="font-size:8px">Assistante générale</text>
-
-        <circle class="node" cx="630" cy="65" r="18" style="stroke:var(--safety-amber)"/>
-        <text x="630" y="69" text-anchor="middle" style="font-size:8px">CB</text>
-        <text class="lbl" x="630" y="98" text-anchor="middle" style="fill:var(--safety-amber)">CABINET BAD</text>
-        <text x="630" y="112" text-anchor="middle" style="font-size:8px">Architecte</text>
-
-        <path class="node" d="M838,90 L860,50 L920,50 L920,90 Z" style="stroke:var(--line-cyan)"/>
-        <text x="879" y="80" text-anchor="middle" style="font-size:8px">MI</text>
-        <text class="lbl" x="879" y="106" text-anchor="middle" style="fill:var(--line-cyan)">MANSATOU IMMOBILIER</text>
-        <text x="879" y="120" text-anchor="middle" style="font-size:8px">PDG · avec Manitou Niang</text>
-      </svg>
-    </div>
-
-    <div class="chain-strip reveal">
-      <span class="chain-lead">Socequip Afrique et Mansatou Immobilier interviennent sur toute la chaîne de valeur :</span>
-      <div class="chain-row">
-        <div class="chain-step"><span class="cnum">01</span> Construire</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-step"><span class="cnum">02</span> Vendre</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-step"><span class="cnum">03</span> Louer</div>
+    <div class="chain-strip">
+      <div class="chain-item">
+        <span class="chain-num">01</span>
+        <span class="chain-label">Construit</span>
       </div>
+      <div class="chain-item">
+        <span class="chain-num">02</span>
+        <span class="chain-label">Vend</span>
+      </div>
+      <div class="chain-item">
+        <span class="chain-num">03</span>
+        <span class="chain-label">Loue</span>
+      </div>
+      <div class="chain-note">Socequip Afrique et Mansatou Immobilier interviennent sur toute la chaîne de valeur : l'entreprise construit, vend et loue des biens immobiliers pour répondre aux besoins des particuliers et des entreprises.</div>
     </div>
   </div>
 </section>
 
-<div class="power-line"></div>
-
-<section id="missions">
+<!-- ============ MISSIONS / LOTS ============ -->
+<section class="section-paper" id="missions">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div>
-        <span class="tag">Feuille 02 — Nos missions</span>
-        <h2>Quatre lots, une même exigence technique</h2>
+        <div class="eyebrow">NOS MISSIONS</div>
+        <h2>Quatre lots,<br>un seul chantier.</h2>
       </div>
-      <p>Études et réalisations en bâtiments et travaux publics (BTP), avec une expertise reconnue dans les lots généraux.</p>
+      <p>SOCEQUIP AFRIQUE intervient sur une large gamme de projets BTP, organisés en lots généraux — de l'étude de faisabilité à la mise en conformité.</p>
     </div>
-    <p class="mission-lead reveal">Nous nous positionnons également comme fournisseur d'équipements spécifiques à l'électrification. Nos ingénieurs et techniciens pluridisciplinaires assurent l'assistance technique, les études de faisabilité et la mise en conformité des installations de nos clients.</p>
-    <div class="mission-grid reveal">
-      <div class="mcard">
-        <span class="mnum">01 — CFO</span>
-        <h3>Électricité courant fort</h3>
+
+    <div class="lots">
+      <div class="lot">
+        <div class="lot-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="code">LOT 01 — CFO</div>
+        <h3>Courant fort</h3>
         <p>Réseaux MT et BT, électricité bâtiment, énergie renouvelable (solaire, éolienne, biogaz), industrie.</p>
       </div>
-      <div class="mcard">
-        <span class="mnum">02 — CFA</span>
-        <h3>Électricité courant faible</h3>
-        <p>Sécurité incendie, désenfumage, domotique, vidéosurveillance, télédistribution, contrôle d'accès, barrières.</p>
+      <div class="lot">
+        <div class="lot-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="code">LOT 02 — CFA</div>
+        <h3>Courant faible</h3>
+        <p>Sécurité incendie, désenfumage, domotique, vidéosurveillance, télédistribution, contrôle d'accès, barrières de sécurité.</p>
       </div>
-      <div class="mcard">
-        <span class="mnum">03 — GO</span>
+      <div class="lot">
+        <div class="lot-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="code">LOT 03 — GO</div>
         <h3>Gros œuvre</h3>
-        <p>Bardage extérieur, couverture et étanchéité, serrurerie, menuiseries intérieures, isolation, cloisonnement, faux plafonds.</p>
+        <p>Bardage extérieur, couverture / étanchéité, serrurerie, menuiseries intérieures, isolation, cloisonnement, faux plafonds.</p>
       </div>
-      <div class="mcard">
-        <span class="mnum">04 — PLB</span>
-        <h3>Plomberie et sanitaire</h3>
-        <p>Adduction d'eau, réseaux sanitaires, branchements et raccordements pour ouvrages résidentiels et publics.</p>
+      <div class="lot">
+        <div class="lot-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2C8 7 5 10.5 5 14.5a7 7 0 0 0 14 0C19 10.5 16 7 12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="code">LOT 04</div>
+        <h3>Plomberie &amp; sanitaire</h3>
+        <p>Adduction d'eau, réseaux d'assainissement, branchements individuels et raccordements de villages.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="vision" class="vision">
+<!-- ============ VISION ============ -->
+<section class="section-dark" id="vision">
   <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow on-dark">NOTRE VISION</div>
+        <h2 style="color:var(--white)">L'accès à l'énergie,<br>sans renoncer au climat.</h2>
+      </div>
+    </div>
+
     <div class="vision-grid">
-      <div class="reveal">
-        <span class="tag">Feuille 03 — Notre vision</span>
-        <h2>Accès à l'énergie, engagement environnemental</h2>
-        <p>Spécialisée dans la conception et la mise en œuvre d'installations, SOCEQUIP AFRIQUE analyse les solutions d'approvisionnement en énergie électrique et planifie les ouvrages d'électrification : équipements photovoltaïques, groupes électrogènes, aérogénérateurs, réseaux électriques, adduction d'eau, plomberie.</p>
-        <p>En s'appuyant sur les nouvelles technologies, l'entreprise déploie les moyens nécessaires pour offrir à ses clients des services de qualité, au sein d'un réseau de partenaires techniques et financiers européens, africains et asiatiques.</p>
-      </div>
-      <div class="double-focus reveal">
-        <div class="focus-item">
-          <h4>Accès à l'énergie</h4>
-          <p>Intégration de solutions pour améliorer l'accès à l'électricité, à l'eau chaude et au combustible domestique.</p>
-        </div>
-        <div class="focus-item">
-          <h4>Préservation de l'environnement</h4>
-          <p>Engagement en faveur des énergies renouvelables et de la lutte contre le changement climatique.</p>
-        </div>
-        <div class="focus-item">
-          <h4>Organisation par départements</h4>
-          <p>Plusieurs départements spécialisés, chacun dédié à un domaine technique précis, pour mieux servir chaque client.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="realisations">
-  <div class="wrap">
-    <div class="section-head reveal">
       <div>
-        <span class="tag">Feuille 04 — Chiffres clés</span>
-        <h2>Quelques repères depuis notre création</h2>
+        <p>Spécialisée dans la conception et la mise en œuvre d'installations, SOCEQUIP AFRIQUE se distingue par son expertise dans l'analyse des solutions d'approvisionnement en énergie électrique, la planification des ouvrages d'électrification — équipements photovoltaïques, groupes électrogènes, aérogénérateurs, réseaux électriques, adduction d'eau, plomberie — ainsi que le suivi des projets d'électrification.</p>
+        <p>L'entreprise a une double préoccupation : intégrer des solutions qui améliorent l'accès à l'énergie, et préserver l'environnement en favorisant les énergies renouvelables. SOCEQUIP AFRIQUE fait partie d'un réseau de partenaires techniques et financiers — sociétés européennes, africaines et asiatiques — engagés dans les énergies renouvelables et le changement climatique.</p>
       </div>
-      <p>Une sélection de réalisations en réseaux électriques, énergie solaire et bâtiment.</p>
-    </div>
-    <div class="chiffres-grid reveal">
-      <div class="chiffre">
-        <div class="stat-num">4 616 <span>ml</span></div>
-        <div class="stat-label">MT + 1 578 ml BT et poste H61 — électrification du village de NGAKHAM</div>
-      </div>
-      <div class="chiffre">
-        <div class="stat-num">26</div>
-        <div class="stat-label">Villages raccordés sur la conduite du Lac de Guiers, pour le compte de la SONES</div>
-      </div>
-      <div class="chiffre">
-        <div class="stat-num">300</div>
-        <div class="stat-label">Systèmes photovoltaïques individuels installés dans la CR de Wack Ngouna (ASER)</div>
-      </div>
-      <div class="chiffre">
-        <div class="stat-num">50</div>
-        <div class="stat-label">Paquets d'ouvrages d'assainissement autonome, département de Linguère</div>
-      </div>
-      <div class="chiffre">
-        <div class="stat-num">600</div>
-        <div class="stat-label">Lanternes solaires fournies — projet Energising Développement Sénégal</div>
-      </div>
-      <div class="chiffre">
-        <div class="stat-num">R+11</div>
-        <div class="stat-label">Immeuble SCI Immobilière, rue Docteur Thèse x Carnot, Dakar</div>
+      <div class="stat-stack">
+        <div class="stat-row"><span class="num">450+</span><span class="label">SYSTÈMES SOLAIRES INDIVIDUELS<br>installés en Casamance (ANRAC / EISSEM)</span></div>
+        <div class="stat-row"><span class="num">27 / 14</span><span class="label">CENTRALES SOLAIRES SÉCURISÉES<br>à travers 14 régions du Sénégal</span></div>
+        <div class="stat-row"><span class="num">56</span><span class="label">VILLAGES ÉQUIPÉS<br>en systèmes communautaires et lampadaires solaires</span></div>
+        <div class="stat-row"><span class="num">8 421 ml</span><span class="label">RÉSEAU MT<br>posé pour l'électrification de Ndiassane Saloum</span></div>
+        <div class="stat-row"><span class="num">10 kWc</span><span class="label">CENTRALE SOLAIRE<br>pour l'alimentation de 2 forages, village de Sabodola</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="power-line"></div>
-
-<section id="domaines">
+<!-- ============ SERVICES ============ -->
+<section class="section-paper" id="services">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div>
-        <span class="tag">Feuille 05 — Réalisations par domaine</span>
-        <h2>Un historique de projets, secteur par secteur</h2>
+        <div class="eyebrow">CE QUE NOUS FAISONS</div>
+        <h2>Du bureau d'études<br>au dépannage.</h2>
       </div>
-      <p>Sélectionnez un domaine pour voir les projets réalisés.</p>
+      <p>Conception, installation et réalisation de projets énergie, électricité et bâtiment — avec accompagnement technique à chaque étape.</p>
     </div>
 
-    <div class="tabs reveal">
-      <button class="tab-btn active" data-tab="t1">Basse &amp; moyenne tension</button>
-      <button class="tab-btn" data-tab="t2">Électrification</button>
-      <button class="tab-btn" data-tab="t3">Tous corps d'état</button>
-      <button class="tab-btn" data-tab="t4">Électricité &amp; plomberie</button>
-      <button class="tab-btn" data-tab="t5">Surcreusement &amp; bétonnage</button>
-      <button class="tab-btn" data-tab="t6">Énergie solaire</button>
-    </div>
-
-    <div class="tab-panel active" id="t1">
-      <div class="proj-grid">
-        <div class="proj-item"><span>Extension réseau MT et BT — <b>site d'exploitation de SONIA, Dougar</b></span></div>
-        <div class="proj-item"><span>Travaux MT pour l'électrification du village de <b>Ndiassane Saloum</b> : 8 421 ml</span></div>
-        <div class="proj-item"><span>Travaux poste H61 — électrification du village de <b>Ndiassane Saloum</b></span></div>
-        <div class="proj-item"><span>MT/BT et poste H61 — village de <b>Ngakham</b> : 4 616 ml MT, 1 578 ml BT, poste 50 kVA</span></div>
-        <div class="proj-item"><span>MT/BT et poste H61 — village de <b>Touba Kankan</b> : 2 211 ml MT 30 kV, poste 50 kVA ; réseau BT Touba Ndiawaldi : 1 085 ml</span></div>
-        <div class="proj-item"><span>Réseau MT/BT et poste H61 — village de <b>Taïba Thiékène</b> : 2 560 ml BT, 80 ml MT, poste 50 kVA</span></div>
-        <div class="proj-item"><span>Réseau MT et BT — <b>Sonia Yène</b></span></div>
-        <div class="proj-item"><span>Réseau BT — <b>Petrosen Diamniadio</b></span></div>
-        <div class="proj-item"><span>Extension réseau BT de <b>Taïba Thiékène</b> (en cours)</span></div>
-        <div class="proj-item"><span>Électrification coopérative d'habitat — <b>Petrosen, Keur Massar</b></span></div>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="t2">
-      <div class="proj-grid">
-        <div class="proj-item"><span>Électrification des entrepôts <b>ICS</b></span></div>
-        <div class="proj-item"><span>Bureaux et restaurant <b>NSOA</b></span></div>
-        <div class="proj-item"><span>Bureaux et entrepôts aux <b>ICS Darou</b></span></div>
-        <div class="proj-item"><span>Bureaux et entrepôts <b>Sénégal Mines</b></span></div>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="t3">
-      <div class="proj-grid">
-        <div class="proj-item"><span>Immeuble <b>SCI Bok Ngor</b> R+5</span></div>
-        <div class="proj-item"><span>Immeuble <b>SCI Immobilière</b> R+11, rue Dr Thèse x Carnot</span></div>
-        <div class="proj-item"><span>Résidence <b>Barkelou Fann</b></span></div>
-        <div class="proj-item"><span>Immeuble <b>Alioune Sall</b></span></div>
-        <div class="proj-item"><span>Immeuble et résidence <b>Cheikh Tidiane Gadio</b></span></div>
-        <div class="proj-item"><span>Immeuble <b>Alwar</b>, rue Mohamed V</span></div>
-        <div class="proj-item"><span>Immeuble <b>SCI Les Frangins</b> : R+7 + mezzanine et sous-sol</span></div>
-        <div class="proj-item"><span>Immeuble <b>Sophie Mbaye</b> R+5 et sous-sol, Point E rue 9 x F</span></div>
-        <div class="proj-item"><span>Immeuble <b>Pathé Dione</b> R+4, rue 9 x 16</span></div>
-        <div class="proj-item"><span>Bureaux <b>SPIA</b></span></div>
-        <div class="proj-item"><span>Tirage câble 900 paires — <b>Sonatel Médina</b></span></div>
-        <div class="proj-item"><span>Immeuble <b>Yoro Lam</b> R+6, Sandaga</span></div>
-        <div class="proj-item"><span>Électrification immeuble <b>Abienna</b> R+6, 111 rue Joseph Gomis, Dakar</span></div>
-        <div class="proj-item"><span>Hôtel <b>La Saint-Louisienne</b>, langue de Barbarie</span></div>
-        <div class="proj-item"><span>Locaux <b>DHL Fann</b></span></div>
-        <div class="proj-item"><span>Immeuble <b>Fatou Bao</b>, Ngor R+3</span></div>
-        <div class="proj-item"><span>Immeuble R+1, <b>Sacré-Cœur 3</b></span></div>
-        <div class="proj-item"><span>Immeuble R+2, <b>Mamelles</b></span></div>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="t4">
-      <div class="proj-grid">
-        <div class="proj-item"><span>Chantier <b>Thiandoum</b>, Ouakam</span></div>
-        <div class="proj-item"><span>Adduction d'eau à <b>Taïba Thiékène</b></span></div>
-        <div class="proj-item"><span>Raccordement de 26 villages sur la conduite du <b>Lac de Guiers</b>, pour la SONES</span></div>
-        <div class="proj-item"><span>50 paquets d'ouvrages d'assainissement autonome, département de <b>Linguère</b></span></div>
-        <div class="proj-item"><span>Marché débranchement à l'égout <b>ONAS</b> : 200 Dakar, 80 Louga, 78 Kaolack</span></div>
-        <div class="proj-item"><span>Marché branchements individuels <b>ONAS</b> : Almadies, Sacré-Cœur, Ouakam</span></div>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="t5">
-      <div class="proj-grid">
-        <div class="proj-item"><span>Travaux de surcreusement — <b>aéroport international de Diass</b> (en cours)</span></div>
-        <div class="proj-item"><span>Travaux de bétonnage — <b>aéroport international de Diass</b> (en cours)</span></div>
-        <div class="proj-item"><span>Pose de conduits et chambres de tirage — marché de <b>Grand Yoff</b>, Télécom 3 et nouveaux lotissements de Dakar, pour la Sonatel</span></div>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="t6">
-      <div class="proj-grid">
-        <div class="proj-item"><span>450 systèmes solaires individuels — <b>îles de Casamance</b>, pour l'ANRAC et EISSEM</span></div>
-        <div class="proj-item"><span>Sécurisation de 27 centrales solaires dans les <b>14 régions du Sénégal</b>, pour Expresso Sénégal</span></div>
-        <div class="proj-item"><span>Systèmes communautaires et lampadaires solaires dans <b>56 villages</b>, pour l'ASER</span></div>
-        <div class="proj-item"><span>600 systèmes individuels et 200 lampadaires — <b>Carabane, Niomoune, Dioguel, Haër, Nikine</b> et 10 villages des îles Karone (projet espagnol ASER)</span></div>
-        <div class="proj-item"><span>Vente de plus de 100 systèmes solaires familiaux — <b>Tamba, Kolda, Vélingara, Casamance, Keur Momar Sarr</b></span></div>
-        <div class="proj-item"><span>Fourniture de 600 lanternes solaires — projet <b>Energising Développement Sénégal</b></span></div>
-        <div class="proj-item"><span>7 unités solaires (PV, batteries, congélateur DC, soudure, éclairage) en zones enclavées, avec <b>World Vision</b></span></div>
-        <div class="proj-item"><span>Pompage photovoltaïque à <b>Gabane Ouolof</b>, CR de Léona (Louga)</span></div>
-        <div class="proj-item"><span>Lampadaires et systèmes PV pour les <b>daaras</b>, pour l'ASER</span></div>
-        <div class="proj-item"><span>300 systèmes photovoltaïques individuels — CR de <b>Wack Ngouna</b>, pour l'ASER</span></div>
-        <div class="proj-item"><span>Réhabilitation de l'armoire de pompage solaire de <b>Samécouta</b> (Tambacounda)</span></div>
-        <div class="proj-item"><span>5 systèmes de pompage direct photovoltaïque — ferme agro-écologique de <b>Ndiob</b> (Fatick)</span></div>
-        <div class="proj-item"><span>Centrale solaire de 10 kWc pour deux forages — village de <b>Sabodola</b></span></div>
-        <div class="proj-item"><span>Systèmes PV pour la recharge de téléphones portables</span></div>
-      </div>
+    <div class="services-list">
+      <div class="service-item"><span class="n">01</span><p>Installation de systèmes solaires photovoltaïques</p></div>
+      <div class="service-item"><span class="n">02</span><p>Installation et maintenance de systèmes électriques</p></div>
+      <div class="service-item"><span class="n">03</span><p>Travaux d'électricité courant fort et courant faible</p></div>
+      <div class="service-item"><span class="n">04</span><p>Réalisation d'installations solaires et éoliennes</p></div>
+      <div class="service-item"><span class="n">05</span><p>Travaux de construction et de rénovation de bâtiments</p></div>
+      <div class="service-item"><span class="n">06</span><p>Réseaux électriques résidentiels, commerciaux et industriels</p></div>
+      <div class="service-item"><span class="n">07</span><p>Études, conception et suivi technique des projets</p></div>
+      <div class="service-item"><span class="n">08</span><p>Maintenance et dépannage des installations</p></div>
+      <div class="service-item"><span class="n">09</span><p>Conseil aux clients pour des solutions énergétiques durables</p></div>
     </div>
   </div>
 </section>
 
-<div class="power-line"></div>
-
-<section id="encours">
+<!-- ============ REALISATIONS ============ -->
+<section class="section-paper" id="realisations" style="background:var(--concrete)">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div>
-        <span class="tag">Feuille 06 — Projets en cours</span>
-        <h2>Chantiers actuellement en réalisation</h2>
+        <div class="eyebrow">DOSSIER TECHNIQUE</div>
+        <h2>Réalisations,<br>par domaine.</h2>
+      </div>
+      <p>Sélection de chantiers menés depuis la création de SOCEQUIP — classés par lot d'intervention.</p>
+    </div>
+
+    <div class="tabs-nav" id="tabsNav">
+      <button class="tab-btn active" data-tab="tab1">Basse &amp; moyenne tension</button>
+      <button class="tab-btn" data-tab="tab2">Électrification</button>
+      <button class="tab-btn" data-tab="tab3">Tous corps d'état</button>
+      <button class="tab-btn" data-tab="tab4">Électricité &amp; plomberie</button>
+      <button class="tab-btn" data-tab="tab5">Surcreusement &amp; bétonnage</button>
+      <button class="tab-btn" data-tab="tab6">Énergie solaire</button>
+      <button class="tab-btn" data-tab="tab7">En cours</button>
+    </div>
+
+    <div class="tab-panel active" id="tab1">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Extension réseau MT et BT — <span class="loc">site d'exploitation de SONIA, Dougar</span></div><div class="badges"></div></div>
+        <div class="proj"><div class="name">Électrification du village de <span class="loc">Ndiassane Saloum</span></div><div class="badges"><span class="badge">8 421 ml MT</span><span class="badge">Poste H61</span></div></div>
+        <div class="proj"><div class="name">Électrification du village de <span class="loc">Ngakham</span></div><div class="badges"><span class="badge">4 616 ml MT</span><span class="badge">1 578 ml BT</span><span class="badge">H61 · 50 kVA</span></div></div>
+        <div class="proj"><div class="name">Électrification des villages de <span class="loc">Touba Kankan &amp; Touba Ndiawaldi</span></div><div class="badges"><span class="badge">2 211 ml MT 30kV</span><span class="badge">H61 · 50 kVA</span><span class="badge">1 085 ml BT</span></div></div>
+        <div class="proj"><div class="name">Réseau MT/BT et poste H61 — <span class="loc">Taïba Thiékène</span></div><div class="badges"><span class="badge">2 560 ml BT</span><span class="badge">80 ml MT</span><span class="badge">H61 · 50 kVA</span></div></div>
+        <div class="proj"><div class="name">Réseau MT et BT — <span class="loc">Sonia Yène</span></div><div class="badges"></div></div>
+        <div class="proj"><div class="name">Réseau BT — <span class="loc">Petrosen Diamniadio</span></div><div class="badges"></div></div>
+        <div class="proj"><div class="name">Extension réseau BT — <span class="loc">Taïba Thiékène</span></div><div class="badges"><span class="badge ongoing">En cours</span></div></div>
+        <div class="proj"><div class="name">Électrification coopérative d'habitat — <span class="loc">Petrosen, Keur Massar</span></div><div class="badges"></div></div>
       </div>
     </div>
-    <div class="encours-grid reveal">
-      <div class="encours-card">
-        <span class="badge">En cours</span>
-        <h3>Résidences SIKI Réalités Afrique</h3>
-        <div class="loc">Résidence Adja Maguette — Point E, rue de Louga, Dakar</div>
-        <div class="pill-row">
-          <span class="pill">Électricité</span>
-          <span class="pill">Courant faible</span>
-          <span class="pill">Énergie solaire</span>
-          <span class="pill">Fourniture et pose</span>
-        </div>
+
+    <div class="tab-panel" id="tab2">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Électrification des entrepôts <span class="loc">ICS</span></div></div>
+        <div class="proj"><div class="name">Bureaux et restaurant <span class="loc">NSOA</span></div></div>
+        <div class="proj"><div class="name">Bureaux et entrepôts — <span class="loc">ICS Darou</span></div></div>
+        <div class="proj"><div class="name">Bureaux et entrepôts — <span class="loc">Sénégal Mines</span></div></div>
       </div>
-      <div class="encours-card">
-        <span class="badge">En cours</span>
-        <h3>Hôpital International de Dakar</h3>
-        <div class="loc">HID — Corniche Ouest / Route de Ngor, Dakar</div>
-        <div class="pill-row">
-          <span class="pill">Courant fort</span>
-          <span class="pill">Fourniture et pose</span>
-        </div>
+    </div>
+
+    <div class="tab-panel" id="tab3">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Immeuble SCI Bok Ngor <span class="loc">R+5</span></div></div>
+        <div class="proj"><div class="name">Immeuble SCI Immobilière <span class="loc">R+11, rue Dr Thèze x Carnot</span></div></div>
+        <div class="proj"><div class="name">Résidence Barkelou — <span class="loc">Fann résidence</span></div></div>
+        <div class="proj"><div class="name">Immeuble Alioune Sall</div></div>
+        <div class="proj"><div class="name">Immeuble et résidence Cheikh Tidiane Gadio</div></div>
+        <div class="proj"><div class="name">Immeuble Alwar — <span class="loc">rue Mohamed V</span></div></div>
+        <div class="proj"><div class="name">Immeuble SCI Les Frangins <span class="loc">R+7 + mezzanine + sous-sol</span></div></div>
+        <div class="proj"><div class="name">Immeuble Sophie Mbaye <span class="loc">R+5 + sous-sol, Point E</span></div></div>
+        <div class="proj"><div class="name">Immeuble Pathé Dioné <span class="loc">R+4, rue 9x16</span></div></div>
+        <div class="proj"><div class="name">Bureaux <span class="loc">SPIA</span></div></div>
+        <div class="proj"><div class="name">Tirage câble — <span class="loc">Sonatel Médina</span></div><div class="badges"><span class="badge">900 paires</span></div></div>
+        <div class="proj"><div class="name">Immeuble Yoro Lam <span class="loc">R+6, Sandaga</span></div></div>
+        <div class="proj"><div class="name">Électrification immeuble Abienna <span class="loc">R+6, 111 rue Joseph Gomis, Dakar</span></div></div>
+        <div class="proj"><div class="name">Hôtel La Saint-Louisienne — <span class="loc">Langue de Barbarie</span></div></div>
+        <div class="proj"><div class="name">Locaux <span class="loc">DHL Fann</span></div></div>
+        <div class="proj"><div class="name">Immeuble Fatou Bâo Ngor <span class="loc">R+3</span></div></div>
+        <div class="proj"><div class="name">Immeuble <span class="loc">R+1, Sacré-Cœur 3</span></div></div>
+        <div class="proj"><div class="name">Immeuble <span class="loc">R+2, Mamelles</span></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab4">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Chantier <span class="loc">Thiandoum (Ouakam)</span></div></div>
+        <div class="proj"><div class="name">Adduction d'eau — <span class="loc">Taïba Thiékène</span></div></div>
+        <div class="proj"><div class="name">Raccordement sur la conduite du Lac de Guiers — <span class="loc">pour le compte de la SONES</span></div><div class="badges"><span class="badge">26 villages</span></div></div>
+        <div class="proj"><div class="name">Ouvrages d'assainissement autonome — <span class="loc">département de Linguère</span></div><div class="badges"><span class="badge">50 paquets</span></div></div>
+        <div class="proj"><div class="name">Marché débranchement à l'égout — <span class="loc">ONAS</span></div><div class="badges"><span class="badge">200 Dakar</span><span class="badge">80 Louga</span><span class="badge">78 Kaolack</span></div></div>
+        <div class="proj"><div class="name">Marché branchements individuels — <span class="loc">ONAS : Almadies, Sacré-Cœur, Ouakam</span></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab5">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Travaux de surcreusement — <span class="loc">Aéroport international de Diass</span></div><div class="badges"><span class="badge ongoing">En cours</span></div></div>
+        <div class="proj"><div class="name">Travaux de bétonnage — <span class="loc">Aéroport international de Diass</span></div><div class="badges"><span class="badge ongoing">En cours</span></div></div>
+        <div class="proj"><div class="name">Pose de conduits et chambres de tirage — <span class="loc">Marché de Grand Yoff, Télécom 3, nouveaux lotissements de Dakar, pour la Sonatel</span></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab6">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Systèmes solaires individuels — <span class="loc">îles de Casamance, pour l'ANRAC et EISSEM</span></div><div class="badges"><span class="badge">450 systèmes</span></div></div>
+        <div class="proj"><div class="name">Sécurisation de centrales solaires — <span class="loc">14 régions du Sénégal, pour Expresso Sénégal</span></div><div class="badges"><span class="badge">27 sites</span></div></div>
+        <div class="proj"><div class="name">Systèmes communautaires et lampadaires solaires — <span class="loc">à travers le Sénégal, pour l'ASER</span></div><div class="badges"><span class="badge">56 villages</span></div></div>
+        <div class="proj"><div class="name">Systèmes individuels et lampadaires publics — <span class="loc">Carabane, Niomoune, Diogué, Haër, Nikine et 10 villages des îles Karone, Casamance (projet espagnol ASER)</span></div><div class="badges"><span class="badge">600 systèmes</span><span class="badge">200 lampadaires</span></div></div>
+        <div class="proj"><div class="name">Vente de systèmes solaires familiaux 50–100 W — <span class="loc">Tamba, Kolda, Vélingara, Casamance, Keur Momar Sarr</span></div><div class="badges"><span class="badge">100+ unités</span></div></div>
+        <div class="proj"><div class="name">Fourniture de lanternes solaires — <span class="loc">projet Energising Développement au Sénégal</span></div><div class="badges"><span class="badge">600 lanternes</span></div></div>
+        <div class="proj"><div class="name">Unités solaires complètes (PV, batteries, congélateur DC, soudure, éclairage) — <span class="loc">zones enclavées, avec World Vision</span></div><div class="badges"><span class="badge">7 unités</span></div></div>
+        <div class="proj"><div class="name">Système de pompage photovoltaïque — <span class="loc">Gabane Ouolof, CR de Léona (Louga)</span></div></div>
+        <div class="proj"><div class="name">Lampadaires et systèmes PV pour les Daaras — <span class="loc">pour l'ASER</span></div></div>
+        <div class="proj"><div class="name">Systèmes photovoltaïques individuels — <span class="loc">CR de Wack Ngouna, pour l'ASER</span></div><div class="badges"><span class="badge">300 systèmes</span></div></div>
+        <div class="proj"><div class="name">Réhabilitation de l'armoire de pompage solaire — <span class="loc">Samécouta, Tambacounda</span></div></div>
+        <div class="proj"><div class="name">Systèmes de pompage direct photovoltaïques — <span class="loc">ferme agroécologique de Ndiob, Fatick</span></div><div class="badges"><span class="badge">5 systèmes</span></div></div>
+        <div class="proj"><div class="name">Centrale solaire pour l'alimentation de 2 forages — <span class="loc">village de Sabodola</span></div><div class="badges"><span class="badge">10 kWc</span></div></div>
+        <div class="proj"><div class="name">Systèmes PV pour la recharge de téléphones portables</div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab7">
+      <div class="proj-list">
+        <div class="proj"><div class="name">Résidences Siki Réalités Afrique — <span class="loc">Point E, rue de Louga, Résidence Adja Maguette, Dakar</span></div><div class="badges"><span class="badge">Électricité</span><span class="badge">Courant faible</span><span class="badge">Solaire</span><span class="badge ongoing">En cours</span></div></div>
+        <div class="proj"><div class="name">Hôpital International de Dakar (HID) — <span class="loc">Corniche Ouest / Route de Ngor</span></div><div class="badges"><span class="badge">Courant fort</span><span class="badge ongoing">En cours</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="partenaires" class="partners">
+<!-- ============ COLLABORATIONS ============ -->
+<section class="section-blueprint" id="collaborations">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div>
-        <span class="tag">Feuille 07 — Nos collaborations</span>
-        <h2>Un réseau de partenaires pour des projets fiables</h2>
+        <div class="eyebrow on-dark">NOS PARTENAIRES</div>
+        <h2 style="color:var(--white)">Un chantier,<br>plusieurs métiers.</h2>
       </div>
-      <p>Nous développons des collaborations avec différents acteurs pour mettre en œuvre des projets fiables, performants et durables.</p>
+      <p>Nous construisons chaque projet avec un réseau d'acteurs techniques, financiers et institutionnels.</p>
     </div>
-    <div class="partner-grid reveal">
-      <div class="partner-item"><span class="idx">01</span> Entreprises et sociétés privées</div>
-      <div class="partner-item"><span class="idx">02</span> Bureaux d'études et cabinets techniques</div>
-      <div class="partner-item"><span class="idx">03</span> Fournisseurs de matériels électriques et solaires</div>
-      <div class="partner-item"><span class="idx">04</span> Entreprises de construction et génie civil</div>
-      <div class="partner-item"><span class="idx">05</span> Architectes, ingénieurs et techniciens spécialisés</div>
-      <div class="partner-item"><span class="idx">06</span> Partenaires financiers et institutionnels</div>
-      <div class="partner-item"><span class="idx">07</span> Sous-traitants et prestataires spécialisés</div>
-      <div class="partner-item"><span class="idx">08</span> Sociétés européennes, africaines et asiatiques — énergies renouvelables et climat</div>
-      <div class="partner-item"><span class="idx">09</span> Rencontres périodiques avec des chefs d'entreprises pour l'expansion des projets</div>
+
+    <div class="collab-grid">
+      <div class="collab-item">Entreprises et sociétés privées</div>
+      <div class="collab-item">Bureaux d'études et cabinets techniques</div>
+      <div class="collab-item">Fournisseurs de matériels électriques et solaires</div>
+      <div class="collab-item">Entreprises de construction et de génie civil</div>
+      <div class="collab-item">Architectes, ingénieurs et techniciens spécialisés</div>
+      <div class="collab-item">Partenaires financiers et institutionnels</div>
+      <div class="collab-item">Sous-traitants et prestataires spécialisés</div>
+      <div class="collab-item">Réseau international — Europe, Afrique, Asie</div>
     </div>
   </div>
 </section>
 
-<footer id="contact">
+<!-- ============ CONTACT ============ -->
+<section class="section-paper" id="contact">
   <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">PARLONS DE VOTRE PROJET</div>
+        <h2>Un chantier<br>à lancer ?</h2>
+      </div>
+    </div>
+
     <div class="contact-grid">
-      <div class="reveal">
-        <span class="tag">Feuille 08 — Contact</span>
-        <h2>Parlons de votre projet</h2>
-        <p>Solutions fiables, durables et adaptées à vos besoins — de l'étude de faisabilité à la mise en service, dans le respect des normes, des délais et des engagements pris.</p>
-        <a href="mailto:contact@socequipafrique.com" class="btn btn-primary">contact@socequipafrique.com</a>
+      <div class="contact-panel">
+        <h3>Coordonnées</h3>
+        <div class="field-row"><span class="k">Direction</span><span class="v">Oumar Niang<br>Directeur Général</span></div>
+        <div class="field-row"><span class="k">Téléphone</span><span class="v">77 250 49 87<br>77 013 42 11</span></div>
+        <div class="field-row"><span class="k">Standard</span><span class="v">+221 33 864 31 65</span></div>
+        <div class="field-row"><span class="k">E-mail</span><span class="v"><a href="mailto:contact@socequipafrique.com">contact@socequipafrique.com</a></span></div>
+        <div class="field-row"><span class="k">Adresse</span><span class="v">SOCEQUIP, Ouest Foire Lot 32<br>VDN, Dakar, Sénégal</span></div>
       </div>
-      <div class="reveal">
-        <div class="director">
-          <span class="label">Directeur Général</span>
-          <h3>Oumar Niang</h3>
-          <div class="cinfo">
-            <div class="row">
-              <div class="label">Téléphone</div>
-              <a class="val" href="tel:+221772504987">+221 77 250 49 87</a> · <a class="val" href="tel:+221770134211">+221 77 013 42 11</a>
-            </div>
-            <div class="row">
-              <div class="label">Standard</div>
-              <a class="val" href="tel:+221338643165">+221 33 864 31 65</a>
-            </div>
-            <div class="row">
-              <div class="label">Adresse</div>
-              <div class="val">Socequip, Ouest Foire Lot 32, VDN — Dakar, Sénégal</div>
-            </div>
-          </div>
-        </div>
+      <div class="contact-panel dark">
+        <h3 style="color:var(--white)">Informations légales</h3>
+        <div class="field-row"><span class="k">RC</span><span class="v">DKR-2022-B-42216</span></div>
+        <div class="field-row"><span class="k">NINEA</span><span class="v">009908619</span></div>
+        <div class="field-row"><span class="k">Activité</span><span class="v">Société de Construction<br>et d'Équipements</span></div>
+        <div class="field-row"><span class="k">Écrivez-nous</span><span class="v"><a class="btn btn-primary" href="mailto:contact@socequipafrique.com" style="margin-top:6px;">Envoyer un e-mail</a></span></div>
       </div>
     </div>
   </div>
-  <div class="title-block">
-    <div class="tb-cell"><div class="tb-label">Dossier</div><div class="tb-val">Présentation SOCEQUIP AFRIQUE</div></div>
-    <div class="tb-cell"><div class="tb-label">RC</div><div class="tb-val">DKR-2022-B-42216</div></div>
-    <div class="tb-cell"><div class="tb-label">NINEA</div><div class="tb-val">009908619</div></div>
-    <div class="tb-cell"><div class="tb-label">Adresse</div><div class="tb-val">Ouest Foire Lot 32, VDN, Dakar</div></div>
-    <div class="tb-cell"><div class="tb-label">Révision</div><div class="tb-val">2026</div></div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="mono">© <span id="year"></span> SOCEQUIP AFRIQUE — TOUS DROITS RÉSERVÉS</span>
+    <span class="mono">DAKAR · SÉNÉGAL</span>
   </div>
-  <div class="foot-bottom">© 2026 SOCEQUIP AFRIQUE — Tous droits réservés</div>
 </footer>
 
 <script src="js/main.js"></script>
