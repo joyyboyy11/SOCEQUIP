@@ -73,7 +73,7 @@ if (navLinks.length && 'IntersectionObserver' in window) {
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(
-  '.section-head, .team-card, .chain-strip, .lot, .stat-row, .service-item, .collab-item, .contact-panel, .tabs-nav, .proj-list'
+  '.section-head, .team-card, .chain-strip, .lot, .stat-row, .service-item, .collab-item, .contact-panel, .tabs-nav, .proj-list, .gallery-item'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 if ('IntersectionObserver' in window) {

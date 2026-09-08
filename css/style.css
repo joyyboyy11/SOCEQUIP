@@ -617,6 +617,60 @@
   }
   .service-item p{ margin:0; font-size:14px; line-height:1.55; }
 
+  /* ============ GALERIE ============ */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+  }
+  .gallery-feature{ grid-column:1 / -1; aspect-ratio:16/7; }
+  @media(max-width:640px){ .gallery-feature{ aspect-ratio:4/3; } }
+  .gallery-item{
+    position:relative;
+    aspect-ratio:4/5;
+    overflow:hidden;
+    background:var(--ink);
+    margin:0;
+  }
+  @media(max-width:800px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:520px){ .gallery-grid{ grid-template-columns:1fr; } .gallery-item{ aspect-ratio:4/3; } }
+  .gallery-item img{
+    width:100%; height:100%; object-fit:cover; display:block;
+    filter:grayscale(10%) contrast(1.05);
+    transition:transform 0.5s var(--ease);
+  }
+  .gallery-item:hover img{ transform:scale(1.05); }
+  .gallery-item::after{
+    content:'';
+    position:absolute; inset:0;
+    background:linear-gradient(0deg, rgba(20,24,28,0.82) 0%, rgba(20,24,28,0.05) 55%, rgba(20,24,28,0) 75%);
+    pointer-events:none;
+  }
+  .gallery-item figcaption{
+    position:absolute; left:16px; right:16px; bottom:14px; z-index:1;
+    display:flex; flex-direction:column; gap:5px;
+  }
+  .gallery-item .tag{
+    align-self:flex-start;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink);
+    background:var(--red);
+    color:var(--white);
+    padding:3px 8px;
+  }
+  .gallery-item .cap-text{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    line-height:1.4;
+    color:var(--white-70);
+    max-width:32ch;
+  }
+  .gallery-feature .cap-text{ font-size:12.5px; max-width:42ch; }
+  .gallery-item .tag.ongoing-tag{ background:var(--yellow); color:var(--ink); }
+
   /* ============ PHOTOS DE CHANTIER ============ */
   .site-photo{
     position:relative;
