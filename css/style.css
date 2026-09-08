@@ -670,6 +670,12 @@
   }
   .gallery-feature .cap-text{ font-size:12.5px; max-width:42ch; }
   .gallery-item .tag.ongoing-tag{ background:var(--yellow); color:var(--ink); }
+  .gallery-item .tag.illus-tag{
+    background:transparent;
+    border:1px solid var(--white-45);
+    color:var(--white-70);
+    font-weight:400;
+  }
 
   /* ============ PHOTOS DE CHANTIER ============ */
   .site-photo{
